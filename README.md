@@ -1,7 +1,7 @@
 # Story Teller 3D Book [![Made with Godot](https://img.shields.io/badge/Made%20with-Godot-478CBF?style=flat&logo=godot%20engine&logoColor=white)](https://godotengine.org)
 Forked from [Interactive 3D book](https://github.com/miskatonicstudio/interactive-book-godot) for Godot 4.x
 
-![Story Teller Screenshot](screenshot.png)
+![Story Teller Screenshot](story-teller.gif)
 
 
 
