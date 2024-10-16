@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://yj50jcpq200s"]
+
+[ext_resource type="Shader" path="res://shader/sky.gdshader" id="1_kqwck"]
+
+[resource]
+shader = ExtResource("1_kqwck")
+shader_parameter/sky_color = Color(0.407843, 0.839216, 0.807843, 1)
+shader_parameter/star_base_color = Color(0.930771, 0.892006, 1, 1)
+shader_parameter/star_hue_offset = 0.6
+shader_parameter/star_intensity = 0.08
+shader_parameter/star_twinkle_speed = 0.8
+shader_parameter/star_twinkle_intensity = 0.2
+shader_parameter/layer_scale = 40.112
+shader_parameter/layer_scale_step = 9.73
+shader_parameter/layers_count = 12

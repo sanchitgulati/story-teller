@@ -1,0 +1,337 @@
+[gd_scene load_steps=22 format=4 uid="uid://byxkmj117ohx0"]
+
+[ext_resource type="Script" path="res://scenes/Book.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://dyspm3hy6o2oi" path="res://scenes/Page.tscn" id="3"]
+[ext_resource type="AudioStream" uid="uid://d1t3mise0xonp" path="res://sfx/page.ogg" id="3_krc24"]
+[ext_resource type="Texture2D" uid="uid://bt6b3gk7eqy8r" path="res://images/text-logo.webp" id="4_tbwyg"]
+[ext_resource type="Material" uid="uid://yj50jcpq200s" path="res://shader/shader_material.tres" id="5_gwv6w"]
+
+[sub_resource type="StandardMaterial3D" id="1"]
+
+[sub_resource type="QuadMesh" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="3"]
+
+[sub_resource type="QuadMesh" id="4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4k8k1"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yjgwq"]
+resource_name = "PageAnimation_Plane_003"
+_surfaces = [{
+"aabb": AABB(0, -0.5, -4.37114e-08, 1, 1, 1e-05),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAIA/AACAPwAAAAAAAAAAAACAPwAAAAAAAAA+AACAPwMAgD4AAIA/AwDAPgAAgD8AAAA/AACAPwAAID8AAIA/AABAPwAAgD8CAGA/AACAPwIAYD8AAAAAAABAPwAAAAAAACA/AAAAAAAAAD8AAAAAAwDAPgAAAAADAIA+AAAAAAAAAD4AAAAA"),
+"bone_aabbs": [AABB(0, -0.5, 3.27835e-08, 0.125, 1, 1.00109e-05), AABB(0.125, -0.5, -3.27835e-08, 0.75001, 1, 1e-05), AABB(0.375, -0.5, -4.37114e-08, 0.62501, 1, 1e-05)],
+"format": 34359745559,
+"index_count": 48,
+"index_data": PackedByteArray("CgADAAEACgALAAMAAAARAAQAAAACABEABAAQAAUABAARABAABQAPAAYABQAQAA8ABgAOAAcABgAPAA4ABwANAAgABwAOAA0ACAAMAAkACAANAAwACQALAAoACQAMAAsA"),
+"material": SubResource("StandardMaterial3D_4k8k1"),
+"primitive": 3,
+"skin_data": PackedByteArray("AgAAAAAAAAD//wAAAAAAAAAAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAAAAAAAAAAD//wAAAAAAAAIAAQAAAAAAVeKpHQAAAAACAAEAAAAAAM+1L0oAAAAAAgABAAAAAAD/f/9/AAAAAAEAAgAAAAAAz7UvSgAAAAABAAIAAAAAAFXiqR0AAAAAAQAAAAAAAAD//wAAAAAAAAEAAAAAAAAA/3//fwAAAAABAAAAAAAAAP9//38AAAAAAQAAAAAAAAD//wAAAAAAAAEAAgAAAAAAVeKpHQAAAAABAAIAAAAAAM+1L0oAAAAAAgABAAAAAAD/f/9/AAAAAAIAAQAAAAAAz7UvSgAAAAACAAEAAAAAAFXiqR0AAAAA"),
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("AACAPwAAAL8tvTuzAAAAAAAAAL8uvTszAACAPwAAAD8tvTuzAAAAAAAAAD8uvTszAABgPwAAAL/izQyzAABAPwAAAL8tvbuyAAAgPwAAAL8rvTuyAAAAPwAAAL8AAACAAADAPgAAAL8uvTsyAACAPgAAAL8uvbsyAAAAPgAAAL/izQwzAAAAPgAAAD/izQwzAACAPgAAAD8uvbsyAADAPgAAAD8uvTsyAAAAPwAAAD8AAACAAAAgPwAAAD8uvTuyAABAPwAAAD8uvbuyAABgPwAAAD/izQyz/////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="Skin" id="Skin_1evec"]
+resource_name = "Skin"
+bind_count = 3
+bind/0/name = &"Bone"
+bind/0/bone = -1
+bind/0/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+bind/1/name = &"Bone.001"
+bind/1/bone = -1
+bind/1/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.5, 0)
+bind/2/name = &"Bone.002"
+bind/2/bone = -1
+bind/2/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gql5v"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_duewi"]
+resource_name = "PageAnimation_Plane_002"
+_surfaces = [{
+"aabb": AABB(2.98023e-08, -0.5, 0, 1, 1, 1e-05),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAIA/AACAPwAAAAAAAAAAAACAPwAAAAAAAAA+AACAPwMAgD4AAIA/AwDAPgAAgD8AAAA/AACAPwAAID8AAIA/AABAPwAAgD8CAGA/AACAPwIAYD8AAAAAAABAPwAAAAAAACA/AAAAAAAAAD8AAAAAAwDAPgAAAAADAIA+AAAAAAAAAD4AAAAA"),
+"bone_aabbs": [AABB(2.98023e-08, -0.5, 0, 0.125, 1, 1e-05), AABB(0.125, -0.5, 0, 0.75, 1, 1e-05), AABB(0.375, -0.5, 0, 0.62501, 1, 1e-05)],
+"format": 34359745559,
+"index_count": 48,
+"index_data": PackedByteArray("CgADAAEACgALAAMAAAARAAQAAAACABEABAAQAAUABAARABAABQAPAAYABQAQAA8ABgAOAAcABgAPAA4ABwANAAgABwAOAA0ACAAMAAkACAANAAwACQALAAoACQAMAAsA"),
+"material": SubResource("StandardMaterial3D_gql5v"),
+"primitive": 3,
+"skin_data": PackedByteArray("AAAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAAAAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAEAAAAAAAAA/3//fwAAAAABAAAAAAAAAP//AAAAAAAAAQACAAAAAABV4qkdAAAAAAEAAgAAAAAAz7UvSgAAAAACAAEAAAAAAP9//38AAAAAAgABAAAAAADPtS9KAAAAAAIAAQAAAAAAVeKpHQAAAAACAAEAAAAAAFXiqR0AAAAAAgABAAAAAADPtS9KAAAAAAIAAQAAAAAA/3//fwAAAAABAAIAAAAAAM+1L0oAAAAAAQACAAAAAABV4qkdAAAAAAEAAAAAAAAA//8AAAAAAAABAAAAAAAAAP9//38AAAAA"),
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("AAAAMwAAAL8AAACAAACAPwAAAL8AAACAAAAAMwAAAD8AAACAAACAPwAAAD8AAACAAgAAPgAAAL8AAACAAQCAPgAAAL8AAACAAQDAPgAAAL8AAACAAAAAPwAAAL8AAACAAAAgPwAAAL8AAACAAABAPwAAAL8AAACAAABgPwAAAL8AAACAAABgPwAAAD8AAACAAABAPwAAAD8AAACAAAAgPwAAAD8AAACAAAAAPwAAAD8AAACAAADAPgAAAD8AAACAAACAPgAAAD8AAACAAQAAPgAAAD8AAACA/3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9//3////+/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="Animation" id="Animation_qx1n6"]
+resource_name = "Turn1"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Page/Skeleton3D:Bone")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, 0, 0, 0, 1, 0.0666667, 1, 0, -0.00604718, 0, 0.999982, 0.1, 1, 0, -0.023559, 0, 0.999723, 0.133333, 1, 0, -0.0515773, 0, 0.998669, 0.166667, 1, 0, -0.0891045, 0, 0.996022, 0.2, 1, 0, -0.135073, 0, 0.990836, 0.233333, 1, 0, -0.188321, 0, 0.982107, 0.266667, 1, 0, -0.247575, 0, 0.968869, 0.3, 1, 0, -0.311449, 0, 0.950263, 0.333333, 1, 0, -0.378462, 0, 0.925617, 0.366667, 1, 0, -0.447068, 0, 0.8945, 0.4, 1, 0, -0.515703, 0, 0.856767, 0.433333, 1, 0, -0.582843, 0, 0.812585, 0.533333, 1, 0, -0.76197, 0, 0.647613, 0.566667, 1, 0, -0.811027, 0, 0.585008, 0.6, 1, 0, -0.853907, 0, 0.520425, 0.633333, 1, 0, -0.890459, 0, 0.455064, 0.666667, 1, 0, -0.920751, 0, 0.39015, 0.7, 1, 0, -0.945058, 0, 0.326902, 0.733333, 1, 0, -0.963837, 0, 0.266492, 0.766667, 1, 0, -0.977697, 0, 0.210022, 0.8, 1, 0, -0.987357, 0, 0.158513, 0.833333, 1, 0, -0.993608, 0, 0.11289, 0.866667, 1, 0, -0.997259, 0, 0.0739913, 0.9, 1, 0, -0.999093, 0, 0.0425763, 0.933333, 1, 0, -0.999813, 0, 0.0193411, 0.966667, 1, 0, -0.999988, 0, 0.00493866, 1, 1, 0, 1, 0, 1.62921e-07)
+tracks/1/type = "position_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Page/Skeleton3D:Bone.001")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0.25, 0, 0, 0.0333333, 1, 0.25, 0, 0, 0.0666667, 1, 0.25, 0, 0.00342936, 0.1, 1, 0.25, 0, 0.01262, 0.133333, 1, 0.25, 0, 0.0259259, 0.166667, 1, 0.25, 0, 0.041701, 0.2, 1, 0.25, 0, 0.058299, 0.233333, 1, 0.25, 0, 0.0740741, 0.266667, 1, 0.25, 0, 0.08738, 0.3, 1, 0.25, 0, 0.0965706, 0.333333, 1, 0.25, 0, 0.1, 0.366667, 1, 0.25, 0, 0.099275, 0.4, 1, 0.25, 0, 0.0972, 0.433333, 1, 0.25, 0, 0.093925, 0.466667, 1, 0.25, 0, 0.0896, 0.5, 1, 0.25, 0, 0.084375, 0.533333, 1, 0.25, 0, 0.0784, 0.566667, 1, 0.25, 0, 0.071825, 0.6, 1, 0.25, 0, 0.0648, 0.633333, 1, 0.25, 0, 0.057475, 0.7, 1, 0.25, 0, 0.042525, 0.733333, 1, 0.25, 0, 0.0352, 0.766667, 1, 0.25, 0, 0.028175, 0.8, 1, 0.25, 0, 0.0216, 0.833333, 1, 0.25, 0, 0.015625, 0.866667, 1, 0.25, 0, 0.0104, 0.9, 1, 0.25, 0, 0.00607501, 0.933333, 1, 0.25, 0, 0.00280002, 0.966667, 1, 0.25, 0, 0.000724986, 1, 1, 0.25, 0, 0)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Page/Skeleton3D:Bone.002")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 1, 0, 0, 0.0333333, 1, 1, 0, 0, 0.0666667, 1, 0.996571, 0, 0, 0.1, 1, 0.98738, 0, 0, 0.133333, 1, 0.974074, 0, 0, 0.166667, 1, 0.958299, 0, 0, 0.2, 1, 0.941701, 0, -1.49012e-08, 0.233333, 1, 0.925926, 0, 0, 0.266667, 1, 0.91262, 0, 2.98023e-08, 0.3, 1, 0.903429, 0, -2.98023e-08, 0.333333, 1, 0.9, 0, 0, 0.366667, 1, 0.900725, 0, 0, 0.4, 1, 0.9028, 0, 0, 0.433333, 1, 0.906075, 0, 0, 0.466667, 1, 0.9104, 0, 0, 0.5, 1, 0.915625, 0, 3.55271e-15, 0.533333, 1, 0.9216, 0, -1.49012e-08, 0.566667, 1, 0.928175, 0, 0, 0.6, 1, 0.9352, 0, -2.98023e-08, 0.633333, 1, 0.942525, 0, -2.98023e-08, 0.7, 1, 0.957475, 0, 0, 0.733333, 1, 0.9648, 0, -2.98023e-08, 0.766667, 1, 0.971825, 0, 0, 0.8, 1, 0.9784, 0, 0, 0.833333, 1, 0.984375, 0, 0, 0.866667, 1, 0.9896, 0, 1.49012e-08, 0.9, 1, 0.993925, 0, 7.45058e-09, 0.933333, 1, 0.9972, 0, 3.72529e-09, 0.966667, 1, 0.999275, 0, 0, 1, 1, 1, 0, 0)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Page/Skeleton3D:Bone.002")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, 0, 0, 0, 1, 0.0666667, 1, 0, 0.00598532, 0, 0.999982, 0.1, 1, 0, 0.0220243, 0, 0.999757, 0.133333, 1, 0, 0.0452338, 0, 0.998976, 0.166667, 1, 0, 0.0727177, 0, 0.997353, 0.2, 1, 0, 0.101576, 0, 0.994828, 0.233333, 1, 0, 0.128924, 0, 0.991655, 0.266667, 1, 0, 0.151916, 0, 0.988393, 0.3, 1, 0, 0.167751, 0, 0.985829, 0.333333, 1, 0, 0.173648, 0, 0.984808, 0.366667, 1, 0, 0.172402, 0, 0.985027, 0.4, 1, 0, 0.168833, 0, 0.985645, 0.433333, 1, 0, 0.163197, 0, 0.986594, 0.466667, 1, 0, 0.155745, 0, 0.987797, 0.5, 1, 0, 0.14673, 0, 0.989177, 0.533333, 1, 0, 0.136407, 0, 0.990653, 0.566667, 1, 0, 0.12503, 0, 0.992153, 0.6, 1, 0, 0.112856, 0, 0.993611, 0.633333, 1, 0, 0.100145, 0, 0.994973, 0.7, 1, 0, 0.074152, 0, 0.997247, 0.733333, 1, 0, 0.061397, 0, 0.998113, 0.766667, 1, 0, 0.0491548, 0, 0.998791, 0.8, 1, 0, 0.0376902, 0, 0.99929, 0.833333, 1, 0, 0.0272674, 0, 0.999628, 0.866667, 1, 0, 0.0181504, 0, 0.999835, 0.9, 1, 0, 0.0106027, 0, 0.999944, 0.933333, 1, 0, 0.00488692, 0, 0.999988, 0.966667, 1, 0, 0.00126538, 0, 0.999999, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_spgru"]
+resource_name = "Turn2"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Page/Skeleton3D:Bone")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 1, 0, 4.37114e-08, 0.0333333, 1, 0, 1, 0, 4.37114e-08, 0.0666667, 1, 0, -0.999982, 0, 0.00604717, 0.1, 1, 0, -0.999723, 0, 0.023559, 0.133333, 1, 0, -0.998669, 0, 0.0515773, 0.166667, 1, 0, -0.996022, 0, 0.0891045, 0.2, 1, 0, -0.990836, 0, 0.135073, 0.233333, 1, 0, -0.982107, 0, 0.188321, 0.266667, 1, 0, -0.968869, 0, 0.247575, 0.3, 1, 0, -0.950263, 0, 0.311449, 0.333333, 1, 0, -0.925617, 0, 0.378462, 0.366667, 1, 0, -0.8945, 0, 0.447068, 0.4, 1, 0, -0.856767, 0, 0.515703, 0.433333, 1, 0, -0.812585, 0, 0.582843, 0.533333, 1, 0, -0.647613, 0, 0.76197, 0.566667, 1, 0, -0.585008, 0, 0.811027, 0.6, 1, 0, -0.520425, 0, 0.853907, 0.633333, 1, 0, -0.455064, 0, 0.890459, 0.666667, 1, 0, -0.390151, 0, 0.920751, 0.7, 1, 0, -0.326903, 0, 0.945058, 0.733333, 1, 0, -0.266492, 0, 0.963837, 0.766667, 1, 0, -0.210023, 0, 0.977697, 0.8, 1, 0, -0.158513, 0, 0.987357, 0.833333, 1, 0, -0.11289, 0, 0.993608, 0.866667, 1, 0, -0.0739916, 0, 0.997259, 0.9, 1, 0, -0.0425766, 0, 0.999093, 0.933333, 1, 0, -0.0193413, 0, 0.999813, 0.966667, 1, 0, -0.00493909, 0, 0.999988, 1, 1, 0, 0, 0, 1)
+tracks/1/type = "position_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Page/Skeleton3D:Bone.001")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0.25, 0, 0, 0.0333333, 1, 0.25, 0, 0, 0.0666667, 1, 0.25, 0, -0.00342936, 0.1, 1, 0.25, 0, -0.01262, 0.133333, 1, 0.25, 0, -0.0259259, 0.166667, 1, 0.25, 0, -0.041701, 0.2, 1, 0.25, 0, -0.058299, 0.233333, 1, 0.25, 0, -0.0740741, 0.266667, 1, 0.25, 0, -0.08738, 0.3, 1, 0.25, 0, -0.0965707, 0.333333, 1, 0.25, 0, -0.1, 0.366667, 1, 0.25, 0, -0.099275, 0.4, 1, 0.25, 0, -0.0972, 0.433333, 1, 0.25, 0, -0.093925, 0.466667, 1, 0.25, 0, -0.0896, 0.5, 1, 0.25, 0, -0.084375, 0.533333, 1, 0.25, 0, -0.0784, 0.566667, 1, 0.25, 0, -0.071825, 0.6, 1, 0.25, 0, -0.0648, 0.633333, 1, 0.25, 0, -0.057475, 0.7, 1, 0.25, 0, -0.042525, 0.733333, 1, 0.25, 0, -0.0352, 0.766667, 1, 0.25, 0, -0.028175, 0.8, 1, 0.25, 0, -0.0216, 0.833333, 1, 0.25, 0, -0.015625, 0.866667, 1, 0.25, 0, -0.0104, 0.9, 1, 0.25, 0, -0.00607501, 0.933333, 1, 0.25, 0, -0.00280002, 0.966667, 1, 0.25, 0, -0.000724986, 1, 1, 0.25, 0, 0)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Page/Skeleton3D:Bone.002")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 1, 0, 0, 0.0333333, 1, 1, 0, 0, 0.0666667, 1, 0.996571, 0, -9.31323e-10, 0.1, 1, 0.98738, 0, 0, 0.133333, 1, 0.974074, 0, 0, 0.166667, 1, 0.958299, 0, 0, 0.2, 1, 0.941701, 0, 0, 0.233333, 1, 0.925926, 0, 0, 0.266667, 1, 0.91262, 0, 0, 0.3, 1, 0.903429, 0, 0, 0.333333, 1, 0.9, 0, -2.98023e-08, 0.366667, 1, 0.900725, 0, 0, 0.4, 1, 0.9028, 0, 0, 0.433333, 1, 0.906075, 0, 0, 0.466667, 1, 0.9104, 0, 0, 0.5, 1, 0.915625, 0, 3.55271e-15, 0.533333, 1, 0.9216, 0, 1.49012e-08, 0.566667, 1, 0.928175, 0, 0, 0.6, 1, 0.9352, 0, 0, 0.633333, 1, 0.942525, 0, 0, 0.7, 1, 0.957475, 0, 0, 0.733333, 1, 0.9648, 0, 0, 0.766667, 1, 0.971825, 0, 0, 0.8, 1, 0.9784, 0, -2.98023e-08, 0.833333, 1, 0.984375, 0, 0, 0.866667, 1, 0.9896, 0, 0, 0.9, 1, 0.993925, 0, -7.45058e-09, 0.933333, 1, 0.9972, 0, 0, 0.966667, 1, 0.999275, 0, -9.31323e-10, 1, 1, 1, 0, 0)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Page/Skeleton3D:Bone.002")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, 0, 0, 0, 1, 0.0666667, 1, 0, -0.00598532, 0, 0.999982, 0.1, 1, 0, -0.0220243, 0, 0.999757, 0.133333, 1, 0, -0.0452338, 0, 0.998976, 0.166667, 1, 0, -0.0727177, 0, 0.997353, 0.2, 1, 0, -0.101576, 0, 0.994828, 0.233333, 1, 0, -0.128924, 0, 0.991655, 0.266667, 1, 0, -0.151916, 0, 0.988393, 0.3, 1, 0, -0.167751, 0, 0.985829, 0.333333, 1, 0, -0.173648, 0, 0.984808, 0.366667, 1, 0, -0.172402, 0, 0.985027, 0.4, 1, 0, -0.168833, 0, 0.985645, 0.433333, 1, 0, -0.163197, 0, 0.986594, 0.466667, 1, 0, -0.155745, 0, 0.987797, 0.5, 1, 0, -0.14673, 0, 0.989177, 0.533333, 1, 0, -0.136407, 0, 0.990653, 0.566667, 1, 0, -0.12503, 0, 0.992153, 0.6, 1, 0, -0.112856, 0, 0.993611, 0.633333, 1, 0, -0.100145, 0, 0.994973, 0.7, 1, 0, -0.074152, 0, 0.997247, 0.733333, 1, 0, -0.061397, 0, 0.998113, 0.766667, 1, 0, -0.0491548, 0, 0.998791, 0.8, 1, 0, -0.0376902, 0, 0.99929, 0.833333, 1, 0, -0.0272674, 0, 0.999628, 0.866667, 1, 0, -0.0181504, 0, 0.999835, 0.9, 1, 0, -0.0106027, 0, 0.999944, 0.933333, 1, 0, -0.00488689, 0, 0.999988, 0.966667, 1, 0, -0.00126538, 0, 0.999999, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_rh4s5"]
+resource_name = "TurnBack"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Page/Skeleton3D:Bone")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 1, 0, 4.37114e-08, 0.0333333, 1, 0, 1, 0, 4.37114e-08, 0.0666667, 1, 0, -0.999985, 0, 0.00547438, 0.1, 1, 0, -0.999771, 0, 0.0213811, 0.133333, 1, 0, -0.998898, 0, 0.0469346, 0.166667, 1, 0, -0.996688, 0, 0.0813192, 0.2, 1, 0, -0.992324, 0, 0.123664, 0.233333, 1, 0, -0.984918, 0, 0.173021, 0.266667, 1, 0, -0.97358, 0, 0.228348, 0.3, 1, 0, -0.95748, 0, 0.288501, 0.333333, 1, 0, -0.935909, 0, 0.352241, 0.366667, 1, 0, -0.908331, 0, 0.418252, 0.4, 1, 0, -0.874422, 0, 0.485166, 0.433333, 1, 0, -0.834104, 0, 0.551608, 0.466667, 1, 0, -0.787558, 0, 0.616241, 0.566667, 1, 0, -0.616241, 0, 0.787558, 0.6, 1, 0, -0.551608, 0, 0.834104, 0.633333, 1, 0, -0.485166, 0, 0.874422, 0.666667, 1, 0, -0.418252, 0, 0.908331, 0.7, 1, 0, -0.352241, 0, 0.935909, 0.733333, 1, 0, -0.288501, 0, 0.95748, 0.766667, 1, 0, -0.228348, 0, 0.97358, 0.8, 1, 0, -0.173021, 0, 0.984918, 0.833333, 1, 0, -0.123664, 0, 0.992324, 0.866667, 1, 0, -0.0813192, 0, 0.996688, 0.9, 1, 0, -0.0469348, 0, 0.998898, 0.933333, 1, 0, -0.0213809, 0, 0.999771, 0.966667, 1, 0, -0.00547454, 0, 0.999985, 1, 1, 0, 0, 0, 1)
+tracks/1/type = "position_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Page/Skeleton3D:Bone.001")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0.25, 0, 0)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Page/Skeleton3D:Bone.002")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 1, 0, 0)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Page/Skeleton3D:Bone.002")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_v23qq"]
+resource_name = "TurnForward"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Page/Skeleton3D:Bone")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, 0, 0, 0, 1, 0.0666667, 1, 0, -0.00547448, 0, 0.999985, 0.1, 1, 0, -0.0213811, 0, 0.999771, 0.133333, 1, 0, -0.0469347, 0, 0.998898, 0.166667, 1, 0, -0.0813192, 0, 0.996688, 0.2, 1, 0, -0.123664, 0, 0.992324, 0.233333, 1, 0, -0.173021, 0, 0.984918, 0.266667, 1, 0, -0.228348, 0, 0.97358, 0.3, 1, 0, -0.288501, 0, 0.95748, 0.333333, 1, 0, -0.352241, 0, 0.935909, 0.366667, 1, 0, -0.418252, 0, 0.908331, 0.4, 1, 0, -0.485166, 0, 0.874422, 0.433333, 1, 0, -0.551608, 0, 0.834104, 0.466667, 1, 0, -0.616241, 0, 0.787558, 0.566667, 1, 0, -0.787558, 0, 0.616241, 0.6, 1, 0, -0.834104, 0, 0.551608, 0.633333, 1, 0, -0.874422, 0, 0.485166, 0.666667, 1, 0, -0.908331, 0, 0.418252, 0.7, 1, 0, -0.935909, 0, 0.352241, 0.733333, 1, 0, -0.95748, 0, 0.288501, 0.766667, 1, 0, -0.97358, 0, 0.228347, 0.8, 1, 0, -0.984918, 0, 0.173021, 0.833333, 1, 0, -0.992324, 0, 0.123664, 0.866667, 1, 0, -0.996688, 0, 0.0813189, 0.9, 1, 0, -0.998898, 0, 0.0469346, 0.933333, 1, 0, -0.999771, 0, 0.0213805, 0.966667, 1, 0, -0.999985, 0, 0.00547438, 1, 1, 0, 1, 0, 1.62921e-07)
+tracks/1/type = "position_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Page/Skeleton3D:Bone.001")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0.25, 0, 0)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Page/Skeleton3D:Bone.002")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 1, 0, 0)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Page/Skeleton3D:Bone.002")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eypoo"]
+_data = {
+"Turn1": SubResource("Animation_qx1n6"),
+"Turn2": SubResource("Animation_spgru"),
+"TurnBack": SubResource("Animation_rh4s5"),
+"TurnForward": SubResource("Animation_v23qq")
+}
+
+[sub_resource type="Sky" id="Sky_ajiwb"]
+sky_material = ExtResource("5_gwv6w")
+
+[sub_resource type="Environment" id="Environment_p8yur"]
+background_mode = 2
+sky = SubResource("Sky_ajiwb")
+ambient_light_source = 2
+ambient_light_color = Color(0.926105, 0.92545, 0.704782, 1)
+
+[node name="Book" type="Node3D"]
+script = ExtResource("2")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.999391, -0.0348995, 0, 0.0348995, 0.999391, 0, 0.12, 2)
+doppler_tracking = 1
+fov = 57.1
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 2)
+shadow_enabled = true
+shadow_bias = 0.01
+omni_shadow_mode = 0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 2)
+light_color = Color(0.839118, 0.478693, 0.0486076, 1)
+light_energy = 1.585
+shadow_enabled = true
+shadow_bias = 0.01
+omni_shadow_mode = 0
+
+[node name="Book" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Static" type="Node3D" parent="Book"]
+
+[node name="PageLeft" type="MeshInstance3D" parent="Book/Static"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+material_override = SubResource("1")
+mesh = SubResource("2")
+
+[node name="PageRight" type="MeshInstance3D" parent="Book/Static"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("3")
+mesh = SubResource("4")
+
+[node name="Turning" type="Node3D" parent="Book"]
+visible = false
+
+[node name="Page" type="Node3D" parent="Book/Turning"]
+
+[node name="Skeleton3D" type="Skeleton3D" parent="Book/Turning/Page"]
+bones/0/name = "Bone"
+bones/0/parent = -1
+bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+bones/0/enabled = true
+bones/0/position = Vector3(0, -0.5, 0)
+bones/0/rotation = Quaternion(0, 0, 0, 1)
+bones/0/scale = Vector3(1, 1, 1)
+bones/1/name = "Bone.001"
+bones/1/parent = 0
+bones/1/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+bones/1/enabled = true
+bones/1/position = Vector3(0.25, 0, 0)
+bones/1/rotation = Quaternion(0, 0, 0, 1)
+bones/1/scale = Vector3(1, 1, 1)
+bones/2/name = "Bone.002"
+bones/2/parent = 0
+bones/2/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+bones/2/enabled = true
+bones/2/position = Vector3(1, 0, 0)
+bones/2/rotation = Quaternion(0, 0, 0, 1)
+bones/2/scale = Vector3(1, 1, 1)
+
+[node name="Back" type="MeshInstance3D" parent="Book/Turning/Page/Skeleton3D"]
+mesh = SubResource("ArrayMesh_yjgwq")
+skin = SubResource("Skin_1evec")
+
+[node name="Front" type="MeshInstance3D" parent="Book/Turning/Page/Skeleton3D"]
+mesh = SubResource("ArrayMesh_duewi")
+skin = SubResource("Skin_1evec")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Book/Turning"]
+libraries = {
+"": SubResource("AnimationLibrary_eypoo")
+}
+
+[node name="PageLeft" type="MeshInstance3D" parent="Book/Turning"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+material_override = SubResource("1")
+mesh = SubResource("2")
+
+[node name="PageRight" type="MeshInstance3D" parent="Book/Turning"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("3")
+mesh = SubResource("4")
+
+[node name="Viewport1" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport1" instance=ExtResource("3")]
+
+[node name="Viewport2" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport2" instance=ExtResource("3")]
+
+[node name="Viewport3" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport3" instance=ExtResource("3")]
+
+[node name="Viewport4" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport4" instance=ExtResource("3")]
+
+[node name="Viewport5" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport5" instance=ExtResource("3")]
+
+[node name="Viewport6" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport6" instance=ExtResource("3")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_krc24")
+
+[node name="Logo" type="Sprite3D" parent="."]
+transform = Transform3D(0.101, 0, 0, 0, 0.101, 0, 0, 0, 1, 0, 1.005, -0.05)
+texture = ExtResource("4_tbwyg")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_p8yur")

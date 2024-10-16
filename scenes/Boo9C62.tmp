@@ -1,0 +1,99 @@
+[gd_scene load_steps=9 format=3 uid="uid://byxkmj117ohx0"]
+
+[ext_resource type="Script" path="res://scenes/Book.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://ce35i4do867ka" path="res://blender/PageAnimation.blend" id="2_jp68o"]
+[ext_resource type="PackedScene" path="res://scenes/Page.tscn" id="3"]
+
+[sub_resource type="Environment" id="Environment_wkgbd"]
+
+[sub_resource type="StandardMaterial3D" id="1"]
+
+[sub_resource type="QuadMesh" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="3"]
+
+[sub_resource type="QuadMesh" id="4"]
+
+[node name="Book" type="Node3D"]
+script = ExtResource("2")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
+environment = SubResource("Environment_wkgbd")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 2)
+shadow_enabled = true
+shadow_bias = 0.01
+omni_shadow_mode = 0
+
+[node name="Book" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Static" type="Node3D" parent="Book"]
+
+[node name="PageLeft" type="MeshInstance3D" parent="Book/Static"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+material_override = SubResource("1")
+mesh = SubResource("2")
+
+[node name="PageRight" type="MeshInstance3D" parent="Book/Static"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("3")
+mesh = SubResource("4")
+
+[node name="Turning" parent="Book" instance=ExtResource("2_jp68o")]
+
+[node name="Viewport1" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport1" instance=ExtResource("3")]
+layout_mode = 3
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Viewport2" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport2" instance=ExtResource("3")]
+layout_mode = 3
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Viewport3" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport3" instance=ExtResource("3")]
+layout_mode = 3
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Viewport4" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport4" instance=ExtResource("3")]
+layout_mode = 3
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Viewport5" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport5" instance=ExtResource("3")]
+layout_mode = 3
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Viewport6" type="SubViewport" parent="."]
+size = Vector2i(400, 600)
+
+[node name="Page" parent="Viewport6" instance=ExtResource("3")]
+layout_mode = 3
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2

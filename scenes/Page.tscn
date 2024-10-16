@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyspm3hy6o2oi"]
+
+[ext_resource type="Script" path="res://scenes/Page.gd" id="2"]
+[ext_resource type="FontFile" uid="uid://bi2qn46sg7rk1" path="res://fonts/Sniglet-Regular.ttf" id="2_hfk0q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64fw0"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 10
+border_width_right = 10
+
+[node name="Page" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2")
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(400, 600)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.94902, 0.941176, 0.803922, 1)
+
+[node name="Panel" type="Panel" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_64fw0")
+
+[node name="Text" type="RichTextLabel" parent="Background"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 40.0
+offset_top = 31.0
+offset_right = -43.0
+offset_bottom = 484.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_hfk0q")
+theme_override_font_sizes/normal_font_size = 36
+bbcode_enabled = true
+text = "Ava stood at the edge of Hawa Ka Van, the forest of eternal winds."
+
+[node name="Number" type="Label" parent="Background"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hfk0q")
+text = "- 0 -"
+horizontal_alignment = 1
